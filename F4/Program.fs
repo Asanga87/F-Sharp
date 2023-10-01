@@ -1,6 +1,7 @@
 ﻿open System
 
 let Main_func()=
+
     
     let rand_list =[1;2;3]
 
@@ -15,5 +16,6 @@ let Main_func()=
     |> printfn"Even Double %A"
 
 Main_func()
+
 
 Console.ReadKey() |> ignore
