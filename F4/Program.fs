@@ -1,17 +1,31 @@
 ﻿open System
 
 let Main_func()=
+
+    printfn "Enter Intiger number:"
     
-    let rand_list =[1;2;3]
+    let gettnum= int32(Console.ReadLine())
 
-    let rand_list_2 = List.map (fun x -> x * 2) rand_list
+    printfn "Enter Float  number:"
 
-    printfn "Doublie List %A" rand_list_2
+    let  floatnum= float(Console.ReadLine())
 
-    [5;6;7;8]
-    |> List.filter (fun v ->(v%2)=0)
-    |> List.map (fun x-> x*2)
-    |> printfn"Even Double %A"
+    printfn "Your number is %A" (gettnum.GetType())
+
+    printfn "Sqrt of your number is %.2f" (sqrt (float(gettnum)))
+
+    printfn "abs of your num is %i" (abs -1)
+
+    printfn "Ceil of your num is %f" (ceil floatnum)
+
+    printfn "floor of your num is %f" (floor floatnum)
+
+
+
+
+
+
+    
 
 Main_func()
 
