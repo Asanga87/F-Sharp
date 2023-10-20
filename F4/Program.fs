@@ -41,11 +41,12 @@ module yearcountong=
             printfn $"Enter correct year count"
         else
         let remainingyears = 5- cutermno
-    
+
         printfn $"Praisdent has only {remainingyears} years to serve" 
         remainingyears
         |> findremaining 
-            
+
+    printfn "Hello %.4f" PI
 
 module run=
     open coding
@@ -59,3 +60,4 @@ module run=
    // findremaining 
     termcalculation (Convert.ToInt32(Console.ReadLine()))
 
+Console.ReadKey() |> ignore
