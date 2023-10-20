@@ -41,11 +41,12 @@ module yearcountong=
             printfn $"Enter correct year count"
         else
         let remainingyears = 5- cutermno
-    
+
         printfn $"Praisdent has only {remainingyears} years to serve" 
         remainingyears
         |> findremaining 
-            
+
+  
 
 module run=
     open coding
